@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+	<display-name>Archetype Created Web Application</display-name>
+	<servlet>
+		<servlet-name>HelloServlet</servlet-name>
+		<servlet-class>com.varxyz.jv300.mod002.HelloServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>TestCount</servlet-name>
+		<servlet-class>com.varxyz.jv300.mod002.TestCount</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LifecycleTestServlet</servlet-name>
+		<servlet-class>com.varxyz.jv300.mod003.LifecycleTestServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LifecycleTestServlet</servlet-name>
+		<url-pattern>/Lifecycle.view</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ServletConfigTestServlet</servlet-name>
+		<servlet-class>com.varxyz.jv300.mod003.ServletConfigTestServlet</servlet-class>
+		<init-param>
+			<param-name>season-list</param-name>
+			<param-value>Spring, Summer, Fall, Winter</param-value>
+		</init-param>
+
+	</servlet>
+	<servlet>
+		<description>
+     	</description>
+		<display-name>FormBasedHelloServlet</display-name>
+		<servlet-name>FormBasedHelloServlet</servlet-name>
+		<servlet-class>com.varxyz.jv300.mod003.FormBasedHelloServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>JoinUser</display-name>
+		<servlet-name>JoinUser</servlet-name>
+		<servlet-class>com.varxyz.jv300.mod004.JoinUser</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>newMem</display-name>
+		<servlet-name>newMem</servlet-name>
+		<servlet-class>com.varxyz.jv300.mod004.newMem</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>NewAdduser</display-name>
+		<servlet-name>NewAdduser</servlet-name>
+		<servlet-class>com.varxyz.jv300.mod004.NewAdduser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletConfigTestServlet</servlet-name>
+		<url-pattern>/config.view</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>JoinUser</servlet-name>
+		<url-pattern>/mod004/join.html</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>newMem</servlet-name>
+		<url-pattern>/mod004/joinMem</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>NewAdduser</servlet-name>
+		<url-pattern>/mod004/join.do</url-pattern>
+	</servlet-mapping>
+</web-app>
